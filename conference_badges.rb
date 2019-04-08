@@ -19,3 +19,12 @@ def assign_rooms(array)
   end
   rooms_list
 end
+
+def printer(array)
+  batch_badge_creator(array) do |greeting|
+    puts greeting
+  end
+  assign_rooms(array) do |reply|
+    puts reply
+  end
+end
